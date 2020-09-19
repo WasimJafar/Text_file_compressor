@@ -50,22 +50,21 @@ public class HuffmanManager {
         createHeap();
         Node left, right;
         while (!minQueue.isEmpty()) {
+
             left = minQueue.poll();
-//            treeSize++;
+
             if (minQueue.peek() != null) {
                 right = minQueue.poll();
-//                treeSize++;
                 root = new Node('\0', left.weight + right.weight, left, right);
-            } else { // only left child. right=null
+
+            } else {
                 root = new Node('\0', left.weight, left, null);
             }
 
             if (minQueue.peek() != null) {
                 minQueue.add(root);
-            } else { // = Top root. Finished building the tree.
-//                treeSize++;
-                break;
             }
+
         }
     }
 
@@ -95,6 +94,7 @@ public class HuffmanManager {
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < string.length(); i++) {
+
             char ch = string.charAt(i);
             sb.append(codeMap.get(ch));
 

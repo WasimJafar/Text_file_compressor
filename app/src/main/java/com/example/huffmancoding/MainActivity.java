@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         String s = "<<<--------RESULT-------->>>";
         String s1 = "File successfully decoded";
 
-        textView.setText("\n"+s + "\n\n" +s1 );
+        textView.setText("\n"+ s + "\n\n" +s1 );
     }
 
     private void recoverCodes(){
@@ -293,12 +293,8 @@ public class MainActivity extends AppCompatActivity {
                 String path = uri.getPath();
                 Log.d(TAG , "File name1 :-->> " + path);
 
-//                String arr[] = path.split("/");
-//                fileNameForDB = arr[arr.length - 1].substring(0 , arr[arr.length - 1].indexOf("."));
                 path = path.substring(path.indexOf(":") + 1);
 
-//                makeText(this, path, Toast.LENGTH_LONG).show();
-//                textView.setText(readText(path));
                 Log.d(TAG , "read file :-->>" + readFromFile);
                 Log.d(TAG , "File name :-->> " + path);
 
@@ -333,6 +329,7 @@ public class MainActivity extends AppCompatActivity {
     private void saveTextAsFile(String filename , String content) {
 
         String fileName = filename + ".txt";
+
         //create file
         File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fileName);
 
