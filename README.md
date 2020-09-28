@@ -13,7 +13,15 @@ The idea was to use variable length encoding than using fixed length encoding. T
 The methodology used for Huffman coding results in a prefix-free code.  A prefix-free code is one in which the bit coding sequence representing some particular character is never a prefix of the bit coding sequence representing any other character.  For example, here is a possible bit sequence for a Huffman code on an alphabet with four characters where D is the most probable and A is the least probable:
 
 ## Algorithm
-<img src = "algo.png" width = 650> 
+
+1. Create a leaf node for each character and add them to the priority queue.
+
+2. While there is more than one node in the queue: <br />
+    a. Remove the two nodes of lowest frequency from the queue.<br />
+    b. Create a new internal node with these two nodes as children and with frequency equal to the sum of the two nodes' frequencies.<br />
+    c. Add the new node to the priority queue.<br />
+3. The remaining node is the root node and the tree is complete. 
+
 <img src = "imag1.PNG" width = 650> 
 <img src = "image2.PNG" width = 650> 
 <img src = "image3.PNG" width = 650>
