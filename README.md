@@ -17,3 +17,8 @@ The methodology used for Huffman coding results in a prefix-free code.  A prefix
 <img src = "image2.PNG" width = 700> 
 <img src = "image3.PNG" width = 700>
 <img src = "image4.PNG" width = 500> 
+
+
+# Examples
+<img src = "example1.PNG" width = 500> 
+<img src = "example2.PNG" width = 510> 
