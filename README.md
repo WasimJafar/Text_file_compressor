@@ -5,7 +5,7 @@ Huffman coding is an entropy encoding algorithm used for lossless data compressi
 The term refers to the use of a variable-length code table for encoding a source symbol (such as a character in a file)
 where the variable-length code table has been derived in a particular way based on the estimated probability of occurrence for each possible value of the source symbol."
 
-## Other variable-length entropy coding systems
+## Variable Length entropy coding systems
 The idea was to use variable length encoding than using fixed length encoding. The fact that some characters occurs more frequently than others in a text, to design an algorithm which can represent the same piece of text using lesser number of bits. In variable length encoding, we assign variable number of bits to characters depending upon their frequency in the given text, so some characters might end up using only one bit.
 
 ## Prefix Free Code
