@@ -22,7 +22,10 @@ The methodology used for Huffman coding results in a prefix-free code.  A prefix
 
 # Examples
 Example 1
+
 <img src = "example1.PNG" width = 450> 
 
 Example 2
+
+
 <img src = "example2.PNG" width = 460> 
