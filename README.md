@@ -1,7 +1,7 @@
 # Text_file_compressor
 
-## What is Huffman coding?
 
+## What is Huffman coding?
 Huffman coding is an entropy encoding algorithm used for lossless data compression. 
 The term refers to the use of a variable-length code table for encoding a source symbol (such as a character in a file)
 where the variable-length code table has been derived in a particular way based on the estimated probability of occurrence for each possible value of the source symbol."
@@ -21,5 +21,8 @@ The methodology used for Huffman coding results in a prefix-free code.  A prefix
 
 
 # Examples
+Example 1
 <img src = "example1.PNG" width = 450> 
+
+Example 2
 <img src = "example2.PNG" width = 460> 
